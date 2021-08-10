@@ -1,6 +1,6 @@
 ## Install & Setup
-https://flutter.dev/docs/get-started/install/macos
-https://flutter-study.dev/getting-started/install
+- https://flutter.dev/docs/get-started/install/macos
+- https://flutter-study.dev/getting-started/install
 
 ## check setup
 ```
@@ -30,3 +30,8 @@ cd my_app
 flutter run
 ```
 
+## Settings
+```
+# Null safetyにする(最初からなっている)
+~/flutter/bin/dart migrate --apply-changes
+```
