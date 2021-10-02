@@ -36,11 +36,7 @@ class MyApp extends StatelessWidget {
             ),
           ),
           /*3*/
-          Icon(
-            Icons.star,
-            color: Colors.red[500],
-          ),
-          const Text('41'),
+          FavoriteWidget(),
         ],
       ),
     );
@@ -124,6 +120,7 @@ class _FavoriteWidgetState extends State<FavoriteWidget> {
   int _favoriteCount = 41;
 
   void _toggleFavorite() {
+    // setStateで再描画
     setState(() {
       if (_isFavorited) {
         _favoriteCount -= 1;
